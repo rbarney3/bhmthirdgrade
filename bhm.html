@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coretta Scott King Award Winners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lexend', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .home, .author-page {
+      padding: 20px;
+      display: none;
+    }
+
+    .home {
+      display: block;
+      text-align: center;
+    }
+
+    .author-card {
+      margin: 15px auto;
+      padding: 20px;
+      max-width: 400px;
+      border-radius: 16px;
+      cursor: pointer;
+      font-size: 1.3em;
+      font-weight: 600;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 16px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 180px;
+      float: right;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .highlight {
+      background: rgba(255,255,255,0.85);
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    /* Color palettes */
+    .barnes { background: #f4a261; }
+    .barnes-page { background: #fff3e6; }
+
+    .ramsey { background: #2a9d8f; }
+    .ramsey-page { background: #e6f7f4; }
+
+    .woodson { background: #9b5de5; }
+    .woodson-page { background: #f3ecff; }
+
+    .alexander { background: #ef476f; }
+    .alexander-page { background: #ffe9ee; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Coretta Scott King Book Award Winners</h1>
+  <p>Research Website for 3rd Grade</p>
+</header>
+
+<!-- HOME PAGE -->
+<section class="home" id="home">
+  <div class="author-card barnes" onclick="showPage('barnes')">Derrick Barnes</div>
+  <div class="author-card ramsey" onclick="showPage('ramsey')">Calvin Alexander Ramsey</div>
+  <div class="author-card woodson" onclick="showPage('woodson')">Jacqueline Woodson</div>
+  <div class="author-card alexander" onclick="showPage('alexander')">Kwame Alexander</div>
+</section>
+
+<!-- DERRICK BARNES -->
+<section id="barnes" class="author-page barnes-page">
+  <img src="db3jpg" alt="Original image">
+  <img src="crown.jpg" alt="Crown book cover">
+  <h2>Derrick Barnes</h2>
+  <p><strong>Born:</strong> 1974, Kansas City, Missouri</p>
+  <ul>
+    <li>He writes books that celebrate Black joy.</li>
+    <li>He believes words can help people feel proud of who they are.</li>
+  </ul>
+  <p><strong>Book:</strong> <em>Crown: An Ode to the Fresh Cut</em></p>
+  <p><strong>3rd Grade Friendly Summary:</strong> This book celebrates the special feeling of getting a fresh haircut. It shows how a haircut can help someone feel confident and proud.</p>
+  <div class="highlight">
+    <strong>Why He Won the Award:</strong>
+    <p>Derrick Barnes won the Coretta Scott King Award because <em>Crown</em> celebrates Black identity, confidence, and joy. It is perfect for Black History Month because it shows pride and self-love.</p>
+  </div>
+  <button onclick="goHome()">🏠</button>
+</section>
+
+<!-- CALVIN ALEXANDER RAMSEY -->
+<section id="ramsey" class="author-page ramsey-page">
+  <img src="car3.jpg" alt="Original image">
+  <img src="woods.jpg" alt="Library in the Woods book cover">
+  <h2>Calvin Alexander Ramsey</h2>
+  <p><strong>Born:</strong> 1948, Columbus, Ohio</p>
+  <ul>
+    <li>He is also a librarian.</li>
+    <li>He enjoys sharing African American history through stories.</li>
+  </ul>
+  <p><strong>Book:</strong> <em>Library in the Woods</em></p>
+  <p><strong>3rd Grade Friendly Summary:</strong> This true story shows how a man brought books to children who lived far away from libraries by riding a horse through the mountains.</p>
+  <div class="highlight">
+    <strong>Why He Won the Award:</strong>
+    <p>He won the Coretta Scott King Award because the book highlights determination, education, and service in African American history. It is an excellent Black History Month book because it shows how learning can change lives.</p>
+  </div>
+  <button onclick="goHome()">🏠</button>
+</section>
+
+<!-- JACQUELINE WOODSON -->
+<section id="woodson" class="author-page woodson-page">
+  <img src="jw3.jpg" alt="Original image">
+  <img src="kindness.jpg" alt="Each Kindness book cover">
+  <h2>Jacqueline Woodson</h2>
+  <p><strong>Born:</strong> 1963, Columbus, Ohio</p>
+  <ul>
+    <li>She writes books about feelings and fairness.</li>
+    <li>Her stories help readers think deeply.</li>
+  </ul>
+  <p><strong>Book:</strong> <em>Each Kindness</em></p>
+  <p><strong>3rd Grade Friendly Summary:</strong> This book teaches that small acts of kindness matter. It reminds readers to be kind before it is too late.</p>
+  <div class="highlight">
+    <strong>Why She Won the Award:</strong>
+    <p>She won the award because the book encourages empathy and responsibility. It is meaningful for Black History Month because it helps students think about how their actions affect others.</p>
+  </div>
+  <button onclick="goHome()">🏠</button>
+</section>
+
+<!-- KWAME ALEXANDER -->
+<section id="alexander" class="author-page alexander-page">
+  <img src="kw3.jpg" alt="Original image">
+  <img src="undefeated.jpg" alt="The Undefeated book cover">
+  <h2>Kwame Alexander</h2>
+  <p><strong>Born:</strong> 1968, New York City, New York</p>
+  <ul>
+    <li>He writes poems and novels.</li>
+    <li>He loves basketball and music.</li>
+  </ul>
+  <p><strong>Book:</strong> <em>The Undefeated</em></p>
+  <p><strong>3rd Grade Friendly Summary:</strong> This powerful poem honors Black Americans who faced challenges and never gave up. It celebrates strength and courage.</p>
+  <div class="highlight">
+    <strong>Why He Won the Award:</strong>
+    <p>Kwame Alexander won the Coretta Scott King Award because the book honors Black history and perseverance. It is perfect for Black History Month because it celebrates resilience and achievement.</p>
+  </div>
+  <button onclick="goHome()">🏠</button>
+</section>
+
+<script>
+  function showPage(id) {
+    document.getElementById('home').style.display = 'none';
+    document.querySelectorAll('.author-page').forEach(p => p.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function goHome() {
+    document.querySelectorAll('.author-page').forEach(p => p.style.display = 'none');
+    document.getElementById('home').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
