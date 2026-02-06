@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coretta Scott King Book Award Authors</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Lexend', Arial, sans-serif;
+      background-color: #f4f6fb;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #5b4b8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .author-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .author-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .author-card:hover {
+      transform: scale(1.05);
+    }
+    .author-page {
+      display: none;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Author color palettes */
+    #barnes { background-color: #fff7e6; border-left: 8px solid #f4b400; }
+    #ramsey { background-color: #e8f4fb; border-left: 8px solid #4a90e2; }
+    #woodson { background-color: #f3e9f7; border-left: 8px solid #9b59b6; }
+    #alexander { background-color: #e9f7ef; border-left: 8px solid #27ae60; }
+    .highlight {
+      background-color: #fff2b2;
+      padding: 10px;
+      border-left: 5px solid #f4b400;
+      margin-top: 15px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #5b4b8a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #43346e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coretta Scott King Book Award Authors</h1>
+    <p>Click an author to learn more about their life and why they won the award</p>
+  </header>
+
+  <main>
+    <!-- Home Page -->
+    <section id="home">
+      <div class="author-grid">
+        <div class="author-card" onclick="showAuthor('barnes')">Derrick Barnes</div>
+        <div class="author-card" onclick="showAuthor('ramsey')">Calvin Alexander Ramsey</div>
+        <div class="author-card" onclick="showAuthor('woodson')">Jacqueline Woodson</div>
+        <div class="author-card" onclick="showAuthor('alexander')">Kwame Alexander</div>
+      </div>
+    </section>
+
+    <!-- Derrick Barnes -->
+    <section id="barnes" class="author-page">
+      <h2>Derrick Barnes</h2>
+      <img src="db3jpeg" alt="Crown book cover" style="float:right; margin:10px; border-radius:8px;">
+      <p><strong>Born:</strong> January 1, 1966, Kansas City, Missouri</p>
+      <p><strong>Fun Facts:</strong></p>
+      <ul>
+        <li>He is also a hip-hop journalist.</li>
+        <li>He writes stories that celebrate Black joy and confidence.</li>
+        <li><em>Crown: An Ode to the Fresh Cut</em> is inspired by real barbershop experiences.</li>
+      </ul>
+      <p><strong>About the Book <em>Crown: An Ode to the Fresh Cut</em>:</strong></p>
+      <p><em>Crown</em> is about a young boy going to the barbershop for a haircut. As he gets his hair cut, he feels stronger, happier, and more confident. The story shows how a haircut can make someone feel proud of who they are.</p>
+      <p><strong>3rd Grade Friendly Summary:</strong></p>
+      <p>This book shows how a boy feels special and powerful after getting a fresh haircut. At the barbershop, people cheer him on and help him feel proud. The story reminds readers that believing in yourself is important.</p>
+      <p><em>Crown</em> is about a young boy getting a fresh haircut and feeling proud, confident, and powerful. The story celebrates self-esteem, community, and identity.</p>
+      <div class="highlight">
+        <strong>Why He Won the Coretta Scott King Award:</strong>
+        <p>Calvin Alexander Ramsey won for <em>Library in the Woods</em> because the book shows the importance of education, access to books, and community support. It is a great Black History Month book because it highlights learning, perseverance, and how sharing knowledge can make a difference.</p>
+      </div>
+      <button onclick="goHome()">Back to Home</button>
+    </section>
+
+    <!-- Jacqueline Woodson -->
+    <section id="woodson" class="author-page">
+      <img src="jw3.jpeg" alt="Each Kindness cover" style="float:right; margin:10px; border-radius:8px;">
+      <h2>Jacqueline Woodson</h2>
+      <p><strong>Born:</strong> February 11, 1963, Columbus, Ohio</p>
+      <p><strong>Fun Facts:</strong></p>
+      <ul>
+        <li>She loved writing stories as a child.</li>
+        <li>She often writes about feelings, choices, and fairness.</li>
+      </ul>
+      <p><strong>About the Book <em>Each Kindness</em>:</strong></p>
+      <p><em>Each Kindness</em> is about a girl who has chances to be kind to a new student but does not take them. Later, she learns that every kind choice matters.</p>
+      <p><strong>3rd Grade Friendly Summary:</strong></p>
+      <p>This story teaches that small acts of kindness are important. The main character learns that when kindness is not shared, it can be missed forever. The book helps readers think about how their choices affect others.</p>
+      <div class="highlight">
+        <strong>Why She Won the Coretta Scott King Award:</strong>
+        <p>Jacqueline Woodson won the Coretta Scott King Award for <em>Each Kindness</em> because the book teaches powerful lessons about empathy, responsibility, and treating others with respect. It is perfect for Black History Month because it encourages students to reflect on fairness, inclusion, and how their actions can help build a kinder community.</p>
+      </div>
+      <button onclick="goHome()">Back to Home()">Back to Home</button>
+    </section>
+
+    <!-- Kwame Alexander -->
+    <section id="alexander" class="author-page">
+      <img src="kw3.jpeg" alt="The Undefeated cover" style="float:right; margin:10px; border-radius:8px;">
+      <h2>Kwame Alexander</h2>
+      <p><strong>Born:</strong> August 21, 1968, New York City, New York</p>
+      <p><strong>Fun Facts:</strong></p>
+      <ul>
+        <li>He writes many books in verse (poems).</li>
+        <li>He often writes about history, heroes, and hope.</li>
+      </ul>
+      <p><strong>About the Book <em>The Undefeated</em>:</strong></p>
+      <p><em>The Undefeated</em> is a powerful poem that honors Black Americans who were never given credit in history. It celebrates people who faced challenges but kept going.</p>
+      <p><strong>3rd Grade Friendly Summary:</strong></p>
+      <p>This book shows the stories of Black heroes, athletes, and everyday people who worked hard and never gave up. The poem reminds readers that even when people feel forgotten, their lives and stories matter.</p>
+      <div class="highlight">
+        <strong>Why He Won the Coretta Scott King Award:</strong>
+        <p>Kwame Alexander won the Coretta Scott King Award for <em>The Undefeated</em> because the book honors African American history, resilience, and courage. It is perfect for Black History Month because it celebrates voices that were overlooked and helps students understand the importance of remembering and honoring all people in history.</p>
+      </div>
+      <button onclick="goHome()">Back to Home()">Back to Home</button>
+    </section>
+  </main>
+
+  <script>
+    function showAuthor(id) {
+      document.getElementById('home').style.display = 'none';
+      document.querySelectorAll('.author-page').forEach(page => page.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function goHome() {
+      document.querySelectorAll('.author-page').forEach(page => page.style.display = 'none');
+      document.getElementById('home').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
